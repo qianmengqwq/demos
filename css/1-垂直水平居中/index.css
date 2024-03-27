@@ -1,0 +1,35 @@
+/* .container {
+    position: relative;
+  }
+  
+  .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+  
+  .item {
+    padding: 1rem;
+    border: 1px solid #999;
+  }
+  
+  .container {
+    height: 12rem;
+    background: #ccc;
+    margin: 1rem;
+  } */
+
+  /* .container {
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+  } */
+
+  /* .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */

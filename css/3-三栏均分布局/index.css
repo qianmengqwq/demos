@@ -1,0 +1,28 @@
+/* .container {
+  display: flex;
+}
+
+.container > div {
+  flex: 1;
+}
+
+.container > div {
+  flex-basis: calc(100% / 3);
+} */
+
+.left {
+  background-color: aqua;
+}
+
+.middle {
+  background-color: lightgreen;
+}
+
+.right {
+  background-color: lightblue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,0 +1,35 @@
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #333333;
+  --bg-color-dark: #1a1a1a;
+  --text-color-dark: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  transition: background-color 300ms, color 300ms;
+}
+
+html[theme='dark'] body {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+html[theme='dark'] {
+  /* invert 将所有色值反转，hue-rotate 将黑白以外的其它主色调再反转回来 */
+  filter: invert(1) hue-rotate(180); /*用filter的一些配置来让色相好一些 */
+  transition: color 300ms, background-color 300ms; /*过渡动画*/
+}
+
+
+.content {
+  margin: 50px auto;
+  width: 80%;
+  max-width: 600px;
+}
+/* 查询用户当前的状态 */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+  }
+} */

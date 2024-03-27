@@ -1,0 +1,33 @@
+.normal {
+  width: 200px;
+  height: 100px;
+  margin-top: 20px;
+  background-color: aliceblue;
+}
+
+/* 创建不同级的bfc，让margin-top不合并 */
+.avoid-merge {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* 高度塌陷，h为0 */
+/* 解决：变成bfc */
+.content {
+  /* overflow: hidden; */
+  /* display: flex; */
+}
+/* 解决：清除浮动 */
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
